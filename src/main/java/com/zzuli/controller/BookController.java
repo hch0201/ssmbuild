@@ -31,6 +31,7 @@ public class BookController {
             Model model){
        // PageHelper.startPage(pn,5);
         List<Book> list = bookService.selectByExample(null);
+        List<Book> listss = bookService.selectByExample(null);
        // PageInfo pageInfo = new PageInfo(list,5);
         //model.addAttribute("pageInfo",pageInfo);
         model.addAttribute("list",list);
